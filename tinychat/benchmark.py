@@ -8,7 +8,7 @@ import numpy as np
 from transformers import AutoTokenizer, AutoModelForCausalLM, AutoConfig, modeling_utils
 import tinychat.utils.constants
 from tinychat.utils.load_quant import load_awq_model
-from awq.quantize.quantizer import real_quantize_model_weight
+from llm_awq.quantize.quantizer import real_quantize_model_weight
 from tinychat.utils.tune import tune_all_wqlinears, device_warmup
 from tinychat.modules import make_quant_norm, make_quant_attn, make_fused_mlp
 

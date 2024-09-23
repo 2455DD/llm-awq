@@ -1,7 +1,7 @@
 import numpy as np
 import time
 import torch
-from awq.quantize.qmodule import WQLinear
+from llm_awq.quantize.qmodule import WQLinear
 
 
 __all__ = ["device_warmup", "tune_all_wqlinears"]

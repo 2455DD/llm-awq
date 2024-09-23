@@ -11,14 +11,14 @@ from accelerate import (
     load_checkpoint_in_model,
 )
 from accelerate.utils.modeling import get_balanced_memory
-from awq.utils.parallel import auto_parallel
-from awq.quantize.pre_quant import run_awq, apply_awq
-from awq.quantize.quantizer import (
+from llm_awq.utils.parallel import auto_parallel
+from llm_awq.quantize.pre_quant import run_awq, apply_awq
+from llm_awq.quantize.quantizer import (
     pseudo_quantize_model_weight,
     real_quantize_model_weight,
 )
-from awq.utils.lm_eval_adaptor import LMEvalAdaptor
-from awq.utils.utils import simple_dispatch_model
+from llm_awq.utils.lm_eval_adaptor import LMEvalAdaptor
+from llm_awq.utils.utils import simple_dispatch_model
 from datasets import load_dataset
 from torch import nn
 import tqdm

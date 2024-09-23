@@ -4,7 +4,7 @@ import torch.nn as nn
 from torch.nn import functional as F
 from typing import Optional, Tuple
 
-# from awq.quantize.qmodule import WQLinear
+# from llm_awq.quantize.qmodule import WQLinear
 # import awq_inference_engine
 # from tinychat.models.llama import apply_rotary_emb
 import gc

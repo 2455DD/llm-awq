@@ -7,8 +7,8 @@ import torch
 import torch.nn as nn
 from transformers import AutoModelForCausalLM
 from accelerate import init_empty_weights, load_checkpoint_and_dispatch
-from awq.quantize.quantizer import real_quantize_model_weight
-from awq.quantize.qmodule import WQLinear
+from llm_awq.quantize.quantizer import real_quantize_model_weight
+from llm_awq.quantize.qmodule import WQLinear
 from tqdm import tqdm
 
 import tinychat.utils.constants

@@ -8,7 +8,7 @@ from transformers.models.llama.modeling_llama import (
     apply_rotary_pos_emb,
 )
 from typing import Optional
-from awq.quantize.qmodule import WQLinear
+from llm_awq.quantize.qmodule import WQLinear
 import awq_inference_engine
 from tinychat.models.llama import apply_rotary_emb
 import gc
